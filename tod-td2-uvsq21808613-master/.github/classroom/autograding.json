@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Tests de la classe Compte",
+      "setup": "",
+      "run": "gradle test --tests fr.uvsq.tod.compte.CompteTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Tests de la classe WordAnalyser",
+      "setup": "",
+      "run": "gradle test --tests fr.uvsq.tod.wordanalyser.WordAnalyzerTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Tests de la classe Fraction",
+      "setup": "",
+      "run": "gradle test --tests fr.uvsq.tod.fraction.FractionTest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}

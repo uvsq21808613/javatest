@@ -6,16 +6,18 @@ package fr.uvsq.tod.compte;
  * @author hal
  * @version 2020
  */
+
 public class Compte {
 	public int  solde ;
 	public Compte(int initialBalance) throws Exception { 
 		
 	// verification si le solde est positif 	
 	  if  ( initialBalance < 0) {
-		  throw new Exception("solde negatif");
+			throw new Exception("ouverture du compte échouée solde negatif  ");
 	  }
 	  
 	  this.solde = initialBalance ;
+	  
   }
 	
 	public boolean    Debit (int  Somme ) throws Exception  { 
@@ -25,7 +27,8 @@ public class Compte {
 			throw new Exception("Opération echouée la somme mise est negative ");
 		}
 			
-		this.solde = solde + Somme ;	
+		this.solde = solde + Somme ;
+
 		return true ;
 		
 	}
@@ -37,6 +40,7 @@ public class Compte {
 			}
 			
 			this.solde =solde -Money ;
+
 			return true ;
 	}
 	
@@ -47,7 +51,6 @@ public class Compte {
 		}
 		Binificaire.solde = Binificaire.solde +montant ;
 		Crediteur.solde = Crediteur.solde -montant ;
-		System.out.println("versement effectuer  ,votre solde est " + this.solde );
 		return true ;
 	}
 	

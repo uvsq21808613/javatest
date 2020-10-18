@@ -9,13 +9,15 @@ public class CompteTest {
   public void shouldCreateAnAccountWithTheSpecifiedBalance() throws Exception {
     Compte c = new Compte(100);    
     assertEquals( 100 , c.getBalance());
+}
+
     
-  }
+  
 @Test 
   public void shouldCreditMyAccountWithTheSpecifiedBalance() throws Exception {
     Compte c = new Compte(100);    
     assertTrue (c.Debit(50));
-  }
+  };;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 @Test 
  public void shouldWithdrawMyAccountWithTheSpecifiedBalance()throws Exception {
 	Compte c =new Compte (100);

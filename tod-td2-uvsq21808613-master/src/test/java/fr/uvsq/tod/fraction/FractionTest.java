@@ -100,6 +100,7 @@ public class FractionTest {
     assertTrue(threeQuarter.compareTo(oneTenth) > 0);
     // (x.compareTo(y)==0) == (x.equals(y))
     Fraction twoTwentieth = new Fraction(BigInteger.valueOf(2), BigInteger.valueOf(20));
+    System.out.println(oneTenth.compareTo(twoTwentieth));
     assertEquals(oneTenth.compareTo(twoTwentieth) == 0, oneTenth.equals(twoTwentieth));
   }
 }
